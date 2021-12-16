@@ -129,8 +129,8 @@ export const DisplayQuestion = () => {
                     <Text style={[qStyle.qBtnText]}>{allOptions[3]}</Text>
                 </TouchableOpacity>
             </View>
-            <View style={[qStyle.Container, {backgroundColor:'#FDD835', marginTop:60}]}>
-                <TouchableOpacity style={[qStyle.optionBtn, {width:200}]}>
+            <View style={[qStyle.Container, {marginTop:60}]}>
+                <TouchableOpacity style={[qStyle.optionBtn, {width:200, backgroundColor:'#FDD835'}]}>
                     <Text style={[qStyle.qText, {textAlign:'center'}]} onPress={() => {restart()}}>Restart</Text>
                 </TouchableOpacity>
             </View>
