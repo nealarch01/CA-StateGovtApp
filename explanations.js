@@ -114,11 +114,11 @@ export const executiveBranchInfo = () => {
 
 export const judicialBranchInfo = () => {
     return (
-        <View style={[eStyles.Container, { height: 1000, }]}>
+        <View style={[eStyles.Container]}>
             <Text style={[eStyles.text]}>
-                The Judicial Branch is responsible for interpreting the law, determining whether a law is constitutional
-                and does not oppress the people, and to serve punishments to individuals who break the law.
-                {'\n\n'}
+                The Judicial Branch is responsible for interpreting the law, assessing whether a law is constitutional
+                and does not oppress people, and to serve punishments to those who break the law.{'\n'}
+                {'\n'}
                 California's judicial branch consists of three trial courts: Trial Courts, Appellate Courts, and the California
                 Supreme Court{'\n\n'}
                 <Text style={[eStyles.text, { fontWeight: 'bold' }]}>
@@ -130,9 +130,9 @@ export const judicialBranchInfo = () => {
                 <Text style={[eStyles.text, { fontWeight: 'bold' }]}>
                     Appellate Court:
                 </Text>
-                {' '}Also known as the appeals court. This court handles appeals of previous
-                rulings by reviewing court cases from the trial courts to determine whether a ruling
-                was done correctly and justified.
+                {' '}Also known as the appeals court. This court handles appeals of earlier
+                case judgements, evaluating the trial court's case procedures to determine if a decision
+                was made correctly and in accordance with the law.
                 {'\n\n'}
                 <Text style={[eStyles.text, { fontWeight: 'bold' }]}>
                     Supreme Court of California:
@@ -146,11 +146,14 @@ export const judicialBranchInfo = () => {
                 {'\n\n'}
                 <Text style={[eStyles.text, { textAlign: 'left' }]}>
                     Link to the California's Supreme Court Justices:{' '}
-                    <Text style={[eStyles.text, {color:'blue'}]} onPress={() => Linking.openURL('https://www.courts.ca.gov/3014.htm')}>
+                    <Text style={[eStyles.text, { color: 'blue' }]} onPress={() => Linking.openURL('https://www.courts.ca.gov/3014.htm')}>
                         courts.ca.gov
                     </Text>
                 </Text>
             </Text>
+            <View style={[eStyles.Container, {justifyContent:'center',alignItems:'center',}]}>
+                <Image source={require('./Assets/ca_judicial.png')} style={{ width: 180, height: 180 }} />
+            </View>
         </View>
     );
 }
@@ -158,7 +161,7 @@ export const judicialBranchInfo = () => {
 const eStyles = StyleSheet.create({
     Container: {
         flex: 1,
-        backgroundColor: '#F5F5F5',
+        backgroundColor: '#FAFAFA',
     },
     text: {
         marginLeft: 20,
