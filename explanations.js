@@ -52,7 +52,7 @@ export const legislativeBranchInfo = () => {
                 have the opportunity to vote and elect another individual once their term limit ends.
                 {'\n\n'}
 
-                Under Califorina's 2012 Proposition 28, California legislators (both Senate and Assembly members) are limited to only serve up to 12 years.
+                Under Califorina's 2012 Proposition 28, California legislators (both Senate and Assembly members) are limited to serve a total of 12 years.
                 {'\n\n'}
                 <Text style={[eStyles.text, { textAlign: 'left' }]}>
                     To find California legislative bills, you can look them up on:
@@ -91,7 +91,7 @@ export const executiveBranchInfo = () => {
                 </Text>
                 {'\n'}
                 Just like the President of the United States, the Governor have 'formal powers' such as signing a piece
-                of legislation into a law or veto a bill. However, it is worth mentioning that a Governor veto can be
+                of legislation into a law or vetoing a bill. Also, it is worth mentioning that a Governor veto can be
                 overriden if a majority of state legislators vote supporting the vetoed bill.
                 {'\n\n'}
                 It is also the Governor's responsibility to assign people to State Offices such
@@ -124,7 +124,7 @@ export const judicialBranchInfo = () => {
                 <Text style={[eStyles.text, { fontWeight: 'bold' }]}>
                     Trial Court:
                 </Text>
-                {' '}Also known to as the Superior Court. This court handles civil, criminal, small claims,
+                {' '}Also known as the Superior Court. This court handles civil, criminal, small claims,
                 and misdemeanor cases.
                 {'\n\n'}
                 <Text style={[eStyles.text, { fontWeight: 'bold' }]}>
@@ -138,10 +138,11 @@ export const judicialBranchInfo = () => {
                     Supreme Court of California:
                 </Text>
                 {' '}
-                The highest court in the state and can review high level cases that affect a portion of the population.
+                The highest court in the state and can review high level cases that affect a portion of the population and review
+                case decisions from the Appellate Court.
                 {'\n'}Similar to the U.S. Supreme Court, justices are appointed by the head of the executive
                 branch. However, they have a 12 year term limit in contrast to the U.S. Supreme Court. Currently,
-                there are five associate justices and one chief justice.
+                there are five associate justices, one associate justice vacancy, and one chief justice.
 
                 {'\n\n'}
                 <Text style={[eStyles.text, { textAlign: 'left' }]}>
