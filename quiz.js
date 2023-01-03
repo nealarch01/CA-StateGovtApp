@@ -150,37 +150,12 @@ function randomNumberExclusive(max) {
 // 1 2 3 4
 // 
 function shuffle(array) {
-    let stack1 = [];
-    let stack2 = [];
-    let midpoint = Math.floor(array.length / 2)
-    for (let i = 0; i < midpoint; i++) {
-        stack1.push(array[i]);
-    }
-    for (let i = midpoint; i < array.length; i++) {
-        stack2.push(array[i]);
-    }
-    if (randomNumberInclusive(1) === 0) stack2.reverse();
-    if (randomNumberInclusive(1) === 0) stack1.reverse();
-    let shuffledArray = [];
-    while (shuffledArray.length < array.length) {
-        if (randomNumberInclusive(1) === 1) {
-            if (stack1.length === 0) {
-                while (stack2.length > 0) {
-                    shuffledArray.push(stack2.pop());
-                }
-                break;
-            }
-            shuffledArray.push(stack1.pop());
-        } else {
-            if (stack2.length === 0) {
-                while (stack1.length > 0) {
-                    shuffledArray.push(stack1.pop());
-                }
-                break;
-            }
-            shuffledArray.push(stack2.pop());
-        }
-    }
+	for (let i = 0; i < array.length; i++) {
+		let j = randomNumberExclusive(array.length);
+		let temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+	}
     return shuffledArray;
 }
 
